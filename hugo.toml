@@ -1,0 +1,42 @@
+baseURL = 'https://cielgrey.neocities.org/'
+languageCode = 'en-us'
+title = "Carmelia Rose"
+theme = 'ananke'
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 2 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    title = "Carmelia Rose"
+    weight = 6
+    contentDir = "content/en"
+    # languageDirection = 'rtl' for Right-To-Left languages
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  text_color = "near-white"
+  author = ""
+  body_classes = "avenir bg-hot-pink"
+  favicon = ""
+  site_logo = ""
+  # description = "The last theme you'll ever. Maybe."
+  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-dark-pink"
+  recent_posts_number = 3
+  title_color = "near-white"
+  nav_title_color = "near-white"
+  nav_list_color = "near-white"
+  description_color = "near-white"
+  #toc= "true"
+
+[[params.ananke_socials]]
+name = "instagram"
+url = "https://instagram.com/avioletcrose"
