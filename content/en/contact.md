@@ -10,5 +10,5 @@ type: page
 menu: main
 ---
 
-
-WELL FUCK YOU, You don't get to. I'll Contact you, not the other fucking way around you dumb shit.
+jk\
+My Instagram is @anastasiadidwording
