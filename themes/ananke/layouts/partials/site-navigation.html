@@ -1,22 +1,22 @@
-<nav class="pv3 ph3 ph4-ns bb-2-1" role="navigation">
+<nav class="navbar" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="{{ .Site.Home.RelPermalink }}" class='f3 fw2 {{ $.Param "nav_title_color" | default "mid-gray" }} no-underline dib dim'>
-      {{ with .Site.Params.site_logo }}
-        <img src="{{ relURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
-      {{ else }}
-        {{ .Site.Title }}
-      {{ end }}
-    </a>
-    <div class="flex-l items-center">
+  <a href="{{ .Site.Home.RelPermalink }}" class='f3 fw2 no-underline {{ $.Param "nav_title_color" | default "mid-gray" }}'>
+  <div class='flex hover-animation-nav ph3 br b--{{ $.Param "nav_title_color" | default "mid-gray" }} items-center'> 
+      {{ .Site.Title}}
+  </div>
+  </a>
+    <div class="pl5 flex items-center">
       {{ partial "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+        <ul class="m0 flex items-center">
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-            <a class='no-underline {{$.Param "nav_list_color" | default "mid-gray" }} dim' href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+          <!--<div class='h-100  hover-animation-nav ph3 br bl b--{{ $.Param "nav_title_color" | default "mid-gray" }}'> -->
+            <a class='no-underline ' href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+          <li class='list flex {{$.Param "nav_list_color" | default "mid-gray" }} items-center f4-ns fw4 dib ph3 bl br b--{{ $.Param "nav_title_color" | default "mid-gray" }} hover-animation-nav'>
               {{ .Name }}
-            </a>
           </li>
+          </a>
+        <!--</div>-->
           {{ end }}
         </ul>
       {{ end }}

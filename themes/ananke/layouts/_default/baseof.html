@@ -52,9 +52,7 @@
     <div class="overflow-y-scroll vh-100 container items-center justify-center">
       {{block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     
-    <main class="pb7 item" role="main">
       {{ block "main" . }}{{ end }}
-    </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
     </div>
   </body>

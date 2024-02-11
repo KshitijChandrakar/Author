@@ -17,9 +17,7 @@
     </div>
   </header>
 {{ else }}
-
-  <header>
-    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
+    <header class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
       {{ partial "site-navigation.html" . }}
       <div class="tc-l pv3 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 mb0 lh-title {{ $.Param "title_color" | default "mid-gray" }}">
@@ -31,6 +29,5 @@
           </h2>
         {{ end }}
       </div>
-    </div>
-  </header>
+    </header>
 {{ end }}
